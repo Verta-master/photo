@@ -1,0 +1,111 @@
+@media @desktop {
+  .wrapper {
+    width: 738px;
+  }
+  
+  .title__h1 {
+    font-size: 55px;
+  }
+  
+  .title__h2 {
+    font-size: 40px;
+  }
+  
+  .card {
+    margin-top: 70px;
+  }
+  
+  .footer {
+    padding-bottom: 40px;
+  }
+}
+//-----------------------
+@media @tablet {
+  .wrapper {
+    width: 290px;
+  }
+  
+  .title__h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  
+  .title__h2 {
+    font-size: 24px;
+  }
+  
+  .title {
+    margin-bottom: 0;
+    
+    &::after {
+      width: 100%;
+    }
+  }
+  
+  .logo__name {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .logo__comment {
+    font-size: 20px;
+    margin-left: 20px;
+    
+    &::before {
+      left: -15px;
+      height: 40px;
+    }
+  }
+  
+  .logo {
+    margin-top: 0;
+  }
+  
+  .footer p,
+  .text {
+    font-size: 18px;
+  }
+  
+  .card {
+    margin-top: 50px;
+  }
+  
+  .card__img {
+    width: 260px;
+    height: auto;
+  }
+  
+  .card__comment {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .card__info {    
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .form {
+    flex-direction: column-reverse;
+    position: absolute;
+    bottom: 30px;;
+    right: 0;
+    width: 50%;
+  }
+  
+  .form__btn {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .form__info {
+    right: -10px;
+  }
+  
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
