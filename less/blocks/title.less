@@ -1,0 +1,33 @@
+.title {
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 65px;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 686px;
+    height: 24px;
+    display: block;
+    background-image: url(../img/wave.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.title__h1,
+h1 {
+  font-size: 113px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+.title__h2,
+h2 {
+  font-size: 48px;
+}

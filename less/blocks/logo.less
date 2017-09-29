@@ -1,0 +1,33 @@
+.logo {
+  margin-top: 40px;
+  display: flex;
+}
+
+.logo__name {
+  font-family: "GothamProBold", "Arial", sans-serif;
+  font-size: 31px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  width: 210px;
+  
+  span {
+    color: @blue;
+  }
+}
+
+.logo__comment {
+  font-size: 31px;
+  width: 185px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 61px;
+    background-color: #fff;
+  }
+}
