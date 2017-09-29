@@ -34,7 +34,7 @@
 
 	/* support for nested featherlights. Does not work in IE8 (use JS to fix) */
 	.featherlight:last-of-type {
-		background: rgba(0, 0, 0, 0.8);
+		background: rgba(0, 0, 0, 0.95);
 	}
 
 	.featherlight:before {
@@ -56,8 +56,9 @@
 
 		/* dimensions: cut off images */
 		overflow: auto;
-		padding: 25px 25px 0;
-		border-bottom: 25px solid transparent;
+//		padding: 25px 25px 0;
+    border-radius: 10px;
+//		border-bottom: 25px solid transparent;
 
 		/* dimensions: handling large content */
 		margin-left: 5%;
@@ -89,22 +90,29 @@
 		/* position: centering vertical and horizontal */
 		position: absolute;
 		z-index: 9999;
-		top: 0;
-		right: 0;
-
-		/* dimensions: 25px x 25px */
-		line-height: 25px;
-		width: 25px;
+		top: 15px;
+		right: 15px;
 
 		/* styling */
-		cursor: pointer;
-		text-align: center;
-		font-family: Arial, sans-serif;
-		background: #fff; /* Set the background in case it overlaps the content */
-		background: rgba(255, 255, 255, 0.3);
-		color: #000;
-		border: none;
-		padding: 0;
+    width: 38px;
+    height: 38px;
+    font-size: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url(../img/button-close-blue.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 10px 25px 0 rgba(0, 106, 255, 0.5);
+
+    &:hover {
+      box-shadow: 0 16px 25px 0 rgba(0, 106, 255, 0.5);
+    }
+
+    &:active {
+      background-color: @blue-btn;
+      background-image: url(../img/button-close-white.png);
+      box-shadow: 0 2px 2px 0 rgba(0, 106, 255, 0.5);
+    }
 	}
 
 	/* See http://stackoverflow.com/questions/16077341/how-to-reset-all-default-styles-of-the-html5-button-element */
